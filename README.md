@@ -4,6 +4,9 @@ Simple program which can receive unformatted JSON piped into in and then will fo
 
 I used this to create a Apple Automator application which gets JSON text from the clipboard and formats the JSON and puts the formatted text back into the clipboard. 
 
+
+![Apple Automator Screen Shot](https://github.com/richardrigby/goprettyjson/blob/master/docs/screen-shot.jpg)
+
 ```bash
 export GOBIN="/Users/richard/Development/source/go/bin"
 export PATH="$PATH:$GOBIN"
@@ -11,3 +14,4 @@ export PATH="$PATH:$GOBIN"
 cat $input | goprettyjson
 ```
 
+Run `go install` to install into GOBIN
